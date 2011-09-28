@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<script type="text/javascript" src="js/goog/base.js"></script>
+<script type="text/javascript" src="js/movielist/login.js"></script>
+<script type="text/javascript">
+  goog.require('movielist.login');
+</script>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Margins, Padding, Borders, and Backgrounds</title>
+		<link rel="stylesheet" href="css/global.css" type="text/css">
+	</head>
+<body>
+<!-- Main Body Page to hold the APP -->
+	<div id="root">
+			<button type="button" onclick="movielist.login.now()">Get Timer </button>
+	</div>
+</body>
+</html>

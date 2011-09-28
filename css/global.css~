@@ -1,0 +1,161 @@
+/* Global CSS styles */
+/* reset styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+/* end reset styles */
+
+/**/
+html {
+	background-color: #fff;
+	margin: 0 auto;
+	width: 960px
+}
+h1 {
+	font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: bold;
+  font-size: 40px;
+  width: 500px;
+  color: #00F;
+  font-family: Times Roman,Arial,san-serif;
+  letter-spacing: 2px;
+  padding: 5px 5px;
+  margin: 2px auto;
+}
+#root {
+	background-color: #DFFFE3;
+  text-align: center;
+  padding: 10px;
+}
+body {
+	background-color: #666;
+  width: 600px;
+}
+p {
+  text-align: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+  line-height: 160%;
+}
+#intro {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: FFF;
+	padding: 5px 5px 10px 5px;
+}
+#intro strong {
+	color: #333;
+	font-size: 25px;
+}
+.products {
+	width: 450px;
+	margin: 10 auto;
+	padding-top: 20px;
+	padding-left: 30px;
+	list-style-type: none;
+}
+.product-name {
+	font-size: 25px;
+	display: inline-block;
+	margin-left: -40px;
+	padding-top: 20px;
+}
+ul a {
+	text-decoration: none;
+}
+.story {
+	font-size: 12px;
+	text-align: left;
+	color: #fff;
+	width: 420px;
+	padding: 10px;	
+	margin-left: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid 1px #fff;
+}
+.tagline {
+	background-color: #ABCBB0;
+	margin-top: 20px;
+	margin-left: 10px;
+	padding: 5px 10px;
+	font-size: 13px;
+}
+
+/* Pure CSS3 method for showing Eye poping buttons */
+/* http://webdesignerwall.com/tutorials/css3-gradient-buttons */
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+.orange {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+.blue-banner {
+	color: #d9ee7;
+	border: 1px solid #0076a3;
+	background: #0095cd;
+	background: 
+	-webkit-gradient(linear,let top,left bottom, from(#006186),to(#004863));
+	background: -moz-linear-gradient(top,  #006186,  #004863);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006186', endColorstr='#004863');
+}
+
+.blue {
+	color: #d9ee7;
+	border: 1px solid #0076a3;
+	background: #0095cd;
+	background: 
+	-webkit-gradient(linear,let top,left bottom, from(#00adee),to(#0078a5));
+}
+.blue:hover {
+	background: #007ead;
+	background: 
+	-webkit-gradient(linear,left top,left bottom,from(#0095cc),to(#00678e));
+}
+.blue:active {
+	color: #80bed6;
+	background: 
+	-webkit-gradient(linear,left top,left bottom,from(#0078a5),to(#00adee));	
+}
+

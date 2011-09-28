@@ -1,0 +1,3 @@
+goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.string.StringBuffer', 'goog.object', 'goog.array']);
+goog.addDependency("../movielist/login.js", ['movielist.login'], ['cljs.core', 'goog']);
+goog.addDependency("../movielist/main.js", ['movielist.main'], ['cljs.core', 'goog.events', 'goog.net.XhrIo', 'goog.dom', 'goog.events.EventType', 'goog.net.Jsonp', 'goog.style', 'goog.structs.Map', 'goog.now', 'goog.json']);
