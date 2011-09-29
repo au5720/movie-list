@@ -4,12 +4,20 @@
 		[goog.dom :as dom]
     [goog.events :as events]
     [goog.json :as json]
+    [cljs.reader :as reader]
     [goog.structs.Map :as m]
     [goog.net.Jsonp :as jsonp]    
     [goog.net.XhrIo :as xhrio]
     [goog.events.EventType :as event-type]	
 		[goog.style :as style]))
 		
+;
+; Utilities Functions
+;
+(defn log 
+	"Funtion to Log anything to the Javascript Console"
+	[str]
+  (js* "console.log(~{str})"))
 
 (defn clj->js
   "Recursively transforms ClojureScript maps into Javascript objects,
@@ -24,6 +32,9 @@
     (coll? x) (apply array (map clj->js x))
     :else x))
 
+;
+; DOM and GUI functions
+;
 (defn set-text
   "Set the text content for the passed element returning the
   element. If a keyword is passed in the place of e, the element with
@@ -49,23 +60,30 @@
 	(let [p (get-element parent)
 				new-obj (my-builder typ prop)]
 				(dom/appendChild p new-obj)))
-				
-(defn echo[from] (window/alert (str "hallo ->" from)))
 
-(defn callback[e]
-	(let [ans (. (.target e) (getResponseJson))]
-		(window/alert (.data ans))))
-		
-(def xhr (goog.net.XhrIo.))
+;
+; AJAX functions
+;				
+
+(defn xhr-return-fn[e]
+	(let [xhr (.target e)
+				respTxt (. xhr (getResponseText))
+        data (reader/read-string respTxt)]
+        (log (str "Returned :" (:name data)))))
+				;;(.setValue (get-element :search-box) (str "Name: "(:name data) " Age: " (:age data)))))
 	
 (defn handle-search-box
 "handle the xhrio"
 []
 	(let [txt (get-element :search-box)
-	      mm (goog.structs.Map.)
-	      postData 'type=user&first=Bob&last=Evans']
-	   (.send xhr "/imdb" callback)))
+				post-data (str "title=" "Star Trek")]
+		(log (str "Search Box Text :" txt))
+		(log (str "post-data :" post-data))
+  	(goog.net.XhrIo/send "/imdb" xhr-return-fn "POST" post-data)))
 
+;
+; Main Called from <script></script> in HTML page
+;
 				
 (defn start[]
   ;; Button Ribbon
