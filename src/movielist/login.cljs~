@@ -1,6 +1,6 @@
 (ns movielist.login
 	(:require
-		[goog.now :as go]))
+		[goog :as go]))
 	
 (defn now[]
 	(window/alert (goog.now)))

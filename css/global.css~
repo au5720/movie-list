@@ -84,6 +84,7 @@ ul a {
 	margin-left: 10px;
 	padding: 5px 10px;
 	font-size: 13px;
+	text-align: left;
 }
 
 /* Pure CSS3 method for showing Eye poping buttons */

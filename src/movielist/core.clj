@@ -1,9 +1,9 @@
+;   Copyright (c) Jennifer Morgan. All rights reserved.
 (ns movielist.core
 	(:use compojure.core)
   (:require 
 	  [ring.util.response :as resp]
   	[appengine-magic.core :as ae] 
-  	[clojure.contrib.json :as json]
   	[appengine-magic.services.user :as usr]
 		[compojure.route :as route]))
 

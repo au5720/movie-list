@@ -1,4 +1,10 @@
 goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.string.StringBuffer', 'goog.object', 'goog.array']);
 goog.addDependency("../cljs/reader.js", ['cljs.reader'], ['cljs.core', 'goog.string']);
+goog.addDependency("../clojure/string.js", ['clojure.string'], ['cljs.core', 'goog.string', 'goog.string.StringBuffer']);
 goog.addDependency("../movielist/login.js", ['movielist.login'], ['cljs.core', 'goog']);
-goog.addDependency("../movielist/main.js", ['movielist.main'], ['cljs.core', 'goog.events', 'cljs.reader', 'goog.net.XhrIo', 'goog.dom', 'goog.events.EventType', 'goog.net.Jsonp', 'goog.style', 'goog.structs.Map', 'goog.now', 'goog.json']);
+goog.addDependency("../movielist/dom-helpers.js", ['movelist.dom_helpers'], ['cljs.core', 'clojure.string', 'goog.dom', 'goog.style']);
+goog.addDependency("../movielist/data.js", ['movielist.data'], ['cljs.core']);
+goog.addDependency("../movielist/debug-helpers.js", ['movielist.debug_helpers'], ['cljs.core']);
+goog.addDependency("../movielist/comms.js", ['movielist.comms'], ['cljs.core', 'movielist.debug_helpers', 'movelist.dom_helpers', 'cljs.reader', 'goog.net.XhrIo']);
+goog.addDependency("../movielist/views.js", ['movielist.views'], ['cljs.core', 'movelist.dom_helpers', 'movielist.data', 'movielist.comms', 'goog.events', 'goog.events.EventType']);
+goog.addDependency("../movielist/main.js", ['movielist.main'], ['cljs.core', 'movielist.views']);

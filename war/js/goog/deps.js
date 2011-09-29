@@ -42,7 +42,6 @@ goog.addDependency("uri/utils.js", ['goog.uri.utils', 'goog.uri.utils.ComponentI
 goog.addDependency("net/xhrio.js", ['goog.net.XhrIo', 'goog.net.XhrIo.ResponseType'], ['goog.Timer', 'goog.debug.Logger', 'goog.debug.entryPointRegistry', 'goog.debug.errorHandlerWeakDep', 'goog.events.EventTarget', 'goog.json', 'goog.net.ErrorCode', 'goog.net.EventType', 'goog.net.HttpStatus', 'goog.net.XmlHttp', 'goog.net.xhrMonitor', 'goog.object', 'goog.structs', 'goog.structs.Map', 'goog.uri.utils']);
 goog.addDependency("string/stringbuffer.js", ['goog.string.StringBuffer'], ['goog.userAgent.jscript']);
 goog.addDependency("base.js", ['goog'], []);
-goog.addDependency("uri/uri.js", ['goog.Uri', 'goog.Uri.QueryData'], ['goog.array', 'goog.string', 'goog.structs', 'goog.structs.Map', 'goog.uri.utils', 'goog.uri.utils.ComponentIndex']);
 goog.addDependency("dom/browserfeature.js", ['goog.dom.BrowserFeature'], ['goog.userAgent']);
 goog.addDependency("dom/tagname.js", ['goog.dom.TagName'], []);
 goog.addDependency("dom/classes.js", ['goog.dom.classes'], ['goog.array']);
@@ -52,4 +51,3 @@ goog.addDependency("dom/dom.js", ['goog.dom', 'goog.dom.DomHelper', 'goog.dom.No
 goog.addDependency("math/box.js", ['goog.math.Box'], ['goog.math.Coordinate']);
 goog.addDependency("math/rect.js", ['goog.math.Rect'], ['goog.math.Box', 'goog.math.Size']);
 goog.addDependency("style/style.js", ['goog.style'], ['goog.array', 'goog.dom', 'goog.math.Box', 'goog.math.Coordinate', 'goog.math.Rect', 'goog.math.Size', 'goog.object', 'goog.string', 'goog.userAgent']);
-goog.addDependency("net/jsonp.js", ['goog.net.Jsonp'], ['goog.Uri', 'goog.dom']);
